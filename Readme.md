@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Артём Рудов](https://up.htmlacademy.ru/htmlcss/18/user/345377).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
 
