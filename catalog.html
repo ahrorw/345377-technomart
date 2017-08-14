@@ -55,10 +55,13 @@
         </header>
         <section class="catalog-filter">
           <p>Фильтр:</p>
-          <h3  class="catalog-filter-title">Цена:</h3>
+
           <form>
 
+            <h3  class="catalog-filter-title">Цена:</h3>
+
             <div class="filter-slider">
+              <input type="range" name="range-price" value="">
             </div>
 
             <div class="filter-interval">
@@ -66,8 +69,24 @@
               <input type="text" name="" value="">
             </div>
 
+            <hr>
 
+            <h3  class="catalog-manufactured-title">Производители:</h3>
 
+            <input type="checkbox" name="manufactured-bosch" value="BOSCH">BOSCH
+            <input type="checkbox" name="manufactured-interscol" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ
+            <input type="checkbox" name="manufactured-maita" value="MAKITA">MAKITA
+            <input type="checkbox" name="manufactured-dewalt" value="DEWALT">DEWALT
+            <input type="checkbox" name="manufactured-hitachi" value="HITACHI">HITACHI
+
+            <hr>
+
+            <h3  class="catalog-feed-title">Питание:</h3>
+
+            <input type="checkbox" name="feed-batery" value="battery">Аккумуляторные
+            <input type="checkbox" name="feed-net" value="network">Сетевые
+
+            <button type="button" name="see-button">Показать</button>
           </form>
         </section>
       </section>
