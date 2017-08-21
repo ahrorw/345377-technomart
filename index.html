@@ -7,18 +7,20 @@
   <body>
     <header class="main-header">
       <div class="top-header">
-        <div class="top-header__logo">Техномарт</div>
-        <form>
-          <input type="search" placeholder="Поиск" class="search-form__input"/>
-          <button type="submit" class="search-form__button">
-            <!--<span class="установить класс для иконки лупы"></span>-->
-          </button>
-        </form>
-        <ul class="price-menu">
-          <li class="price-menu__list"><a href="#">Закладки: 0</a></li>
-          <li class="price-menu__list"><a href="#">Корзина: 0</a></li>
-          <li class="price-menu__list"><a href="#">Оформить заказ: 0</a></li>
-        </ul>
+        <div class="container_fullsize">
+          <div class="top-header__logo">Техномарт</div>
+          <form>
+            <input type="search" placeholder="Поиск" class="search-form__input"/>
+            <button class="search-form__button">
+              <!--<span class="установить класс для иконки лупы"></span>-->
+            </button>
+          </form>
+          <ul class="price-menu">
+            <li class="price-menu__list"><a href="#">Закладки: 0</a></li>
+            <li class="price-menu__list"><a href="#">Корзина: 0</a></li>
+            <li class="price-menu__list"><a href="#">Оформить заказ: 0</a></li>
+          </ul>
+        </div>
       </div>
       <section class="middle-header">
         <p class="header-description">Интернет-магазин строительных материалов и инструментов для
@@ -46,17 +48,17 @@
     </header>
 
     <main>
-      <h1 class="visability-hidden">Техномарт - строительные материалы и
+      <h1 class="visibally-hidden">Техномарт - строительные материалы и
         инструменты для ремонта</h1>
-      <section class="promo">
-        <div class="left=promo">
-          <div class="promo-item new-item">
-            <h2>Материалы</h2>
-            <a href="#">На любой вкус</a>
+      <section class="promo-content">
+        <div class="promo-content_left-position">
+          <div class="promo-item new">
+            <h2 class="pormo-item__title">Материалы</h2>
+            <a href="#" class="pormo-item__link">На любой вкус</a>
           </div>
           <div class="promo-item new-item">
-            <h2>Инструмент</h2>
-            <a href="#">На все случаи</a>
+            <h2 class="promo-item__title">Инструмент</h2>
+            <a href="#" class="pormo-item__link">На все случаи</a>
           </div>
           <div class="promo-carousel">
 
@@ -86,18 +88,19 @@
               </div>
             </div>
           </div>
-        <div class="right-promo">
-          <div class="promo-item new-item">
-            <h2>Техника</h2>
-            <a href="#">для стройки</a>
+
+        <div class="promo-content_right-position">
+          <div class="promo-item">
+            <h2 class="promo-item__link">Техника</h2>
+            <a href="#" class="pormo-item__link">для стройки</a>
+          </div>
+          <div class="promo-item">
+            <h2 class="promo-item__link">Скидки 50%</h2>
+            <a href="#" class="pormo-item__link">На 350 товаров</a>
           </div>
           <div class="promo-item new-item">
-            <h2>Скидки 50%</h2>
-            <a href="#">На 350 товаров</a>
-          </div>
-          <div class="promo-item new-item">
-            <h2>Доставка</h2>
-            <a href="#">Бесплатно</a>
+            <h2 class="promo-item__link">Доставка</h2>
+            <a href="#" class="pormo-item__link">Бесплатно</a>
           </div>
         </div>
       </section>
@@ -111,13 +114,13 @@
           <li>
             <img src="img/BOSCH-BFG-9000.jpg" width="180" height="160">
             <h3>Перфоратор BOSCH BFG 9000</h3>
-            <p class="old-price">32500 Р.</p>
+            <del class="old-price">32500 Р.</del>
             <a class="new-price" href="#">25500 Р.</a>
           </li>
           <li>
             <img src="img/BOSCH-BFG-3000.jpg" width="180" height="160">
             <h3>Перфоратор BOSCH BFG 3000</h3>
-            <p class="old-price">22500 Р.</p>
+            <del class="old-price">22500 Р.</del>
             <a class="new-price" href="#">15500 Р.</a>
           </li>
           <li>
