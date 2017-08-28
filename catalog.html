@@ -112,7 +112,7 @@
         <section class="filter">
           <h2 class="filter__title">Фильтр:</h2>
 
-          <form class="filter__form" method="get">
+          <form method="get" name="filter" class="filter__form">
 
             <fieldset>
             <legend  class="filter__title">Цена:</legend>
@@ -129,31 +129,34 @@
             </fieldset>
             <fieldset>
 
-              <legend  class="catalog-manufactured-title">Производители:</legend>
-              <label name="manfucatured-bosch" id="bosch">
-                <input type="checkbox" name="manufactured-bosch" id="bosch" value="BOSCH">BOSCH
+              <legend  class="filter__manufactured">Производители:</legend>
+              <label for="bosch" class="filter__label">
+                <input type="checkbox"  id="bosch" name="manufactured" value="BOSCH">BOSCH
               </label>
-              <label name="manufactured-interscol" id="interscol">
-                <input type="checkbox" name="manufactured-interscol" id="interscol" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ
-              <label name="manufactured-makita" id="makita">
-                <input type="checkbox" name="manufactured-makita" id="makita" value="MAKITA">MAKITA
-              <label name="manufactured-dewalt" id="dewalt">
-                <input type="checkbox" name="manufactured-dewalt" id="dewalt" value="DEWALT">DEWALT
-              <label name="manufactured-hitachi" id="hitachi">
-                <input type="checkbox" name="manufactured-hitachi" id="hitachi" value="HITACHI">HITACHI
+              <label for="interscol" class="filter__label">
+                <input type="checkbox" name="manufactured" id="interscol" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ
+              </label>
+              <label for="makita" class="filter__label">
+                <input type="checkbox" name="manufactured" id="makita" value="MAKITA">MAKITA
+              </label>
+              <label for="dewalt" class="filter__label">
+                <input type="checkbox" name="manufactured" id="dewalt" value="DEWALT">DEWALT
+              </label>
+              <label for="hitachi" class="filter__label">
+                <input type="checkbox" name="manufactured" id="hitachi" value="HITACHI">HITACHI
               </label>
             </fieldset>
 
             <fieldset>
             <legend  class="catalog-feed-title">Питание:</legend>
-            <label name="manufactured" id="interscol">
-              <input type="checkbox" name="feed-batery" value="battery">Аккумуляторные
+            <label for="feed-batery" class="filter__label">
+              <input type="checkbox" name="feed" id="feed-batery" value="battery">Аккумуляторные
             </label>
-            <label name="manufactured" id="interscol">
-              <input type="checkbox" name="feed-net" value="network">Сетевые
+            <label for="feed-net" class="filter__label">
+              <input type="checkbox" name="feed" id="feed-net" value="network">Сетевые
             </label>
 
-            <button type="submit" name="see-button">Показать</button>
+            <button>Показать</button>
             </fieldset>
           </form>
         </section>
@@ -163,14 +166,14 @@
         <h2 class="catalog-content__title">Сортировка</h2>
         <ul class="sort-price">
           <li class="sort-price__item">
-            <a hre="#" class="sort-price__link sort-price__link_price">
+            <a href="#" class="sort-price__link sort-price__link_price">
               По цене</a>
           </li>
           <li class="sort-price__item">
             <a href="#" class="sort-price__link sort-price__link_type">
               По типу</a>
           </li>
-          <li class="sort-price__item"
+          <li class="sort-price__item">
             <a href="#" class="sort-price__link sort-price__link_functional">
               По функционалу</a>
           </li>
@@ -272,16 +275,16 @@
         <footer class="catalog-footer">
           <ul class="footer-list">
             <li class="footer-list__item">
-              <a type="button" class="footer-list__link">1</a>
+              <a class="footer-list__link">1</a>
             </li>
             <li class="footer-list__item">
-              <a type="button" class="footer-list__link">2</a>
+              <a class="footer-list__link">2</a>
             </li>
             <li class="footer-list__item">
-              <a type="button" class="footer-list__link">3</a>
+              <a class="footer-list__link">3</a>
             </li>
             <li class="footer-list__item">
-              <a type="button" class="footer-list__link">Следующая</a>
+              <a class="footer-list__link">Следующая</a>
             </li>
           </ul>
         </footer>
@@ -304,25 +307,26 @@
 
         <section class="footer-top">
           <div class="footer-top__logo">Техномарт</div>
-        <nav class="footer-menu">
-          <ul class="footer-menu__list">
-            <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Компания</a>
-            </li>
-            <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Новости</a>
-            </li>
-            <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Каталог</a>
-            </li>
-            <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Доставка</a>
-            </li>
-            <li class="footer-menu__item">
-              <a href="#" class="footer-menu__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="footer-menu">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link">Компания</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link">Новости</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link">Каталог</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link">Доставка</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="#" class="footer-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
         <section class="footer-middle">
           <address class="footer-middle__address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>
           +7 (812) 555-05-55</address>
@@ -343,7 +347,7 @@
         </section>
 
         <section class="bottom-footer">
-          <p class="bottom-footer__copyright">&copy 2010-2017 Компания "Техномарт" <br>
+          <p class="bottom-footer__copyright">&copy; 2010-2017 Компания "Техномарт" <br>
           Все права защищены</p>
 
           <div class="bottom-footer__social-button">
