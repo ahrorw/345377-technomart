@@ -93,8 +93,7 @@
         инструменты для ремонта</h1>
 
       <section class="promo-content">
-        <div class="promo-content__column promo-content__column_position
-        promo-content__column_position_left">
+        <div class="promo-content__column promo-content__column_position promo-content__column_position_left">
 
           <div class="promo-item new">
             <h2 class="promo-item__title">Материалы</h2>
@@ -116,7 +115,7 @@
             <div class="promo-carousel">
               <div id="promo-carousel__1">
                 <div class="promo-carousel__description">
-                  <h2 class="promo-carousel__title">Первораторы</h3>
+                  <h2 class="promo-carousel__title">Первораторы</h2>
                   <p class="promo-carousel__text">Настоящие мужские игрушки</p>
                 </div>
                 <div class="promo-carousel__picture">
@@ -137,9 +136,10 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-        <div class="promo-content__column promo-content__column_position
-        promo-content__column_position_right">
+        <div class="promo-content__column promo-content__column_position promo-content__column_position_right">
 
           <div class="promo-item">
             <h2 class="promo-item__link">Техника</h2>
@@ -167,28 +167,28 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <img src="img/BOSCH-BFG-9000.jpg" alt="BOSCH BFG 9000"
-            width="180" height="160" class="popular-item__image">
+            width="180" height="160" class="catalog-item__image">
             <h3 class="catalog-item__title">Перфоратор BOSCH BFG 9000</h3>
             <del class="catalog-item__old-price">32500 Р.</del>
             <a class="catalog-item__link" href="#">25500 Р.</a>
           </li>
           <li class="catalog-item">
             <img src="img/BOSCH-BFG-3000.jpg" alt="BOSCH BFG 3000"
-            width="180" height="160" class="popular-item__image">
+            width="180" height="160" class="catalog-item__image">
             <h3 class="catalog-item__title">Перфоратор BOSCH BFG 3000</h3>
             <del class="catalog-item__old-price">22500 Р.</del>
             <a class="catalog-item__link" href="#">15500 Р.</a>
           </li>
           <li class="catalog-item">
             <img src="img/BOSCH-BFG-6000.jpg" alt="BOSCH BFG 6000"
-            width="144" height="128" class="popular-item__image">
+            width="144" height="128" class="catalog-item__image">
             <h3 class="catalog-item__title">Перфоратор BOSCH BFG 6000</h3>
             <del class="catalog-item__old-price">30500 Р.</del>
             <a class="catalog-item__link" href="#">25500 Р.</a>
           </li>
           <li class="catalog-item">
             <img src="img/BOSCH-BFG-2000.jpg" alt="BOSCH BFG 2000"
-            width="127" height="112" class="popular-item__image">
+            width="127" height="112" class="catalog-item__image">
             <h3 class="catalog-item__title">Перфоратор BOSCH BFG 9000</h3>
             <a class="catalog-item__link" href="#">12500 Р.</a>
           </li>
@@ -271,9 +271,11 @@
             <li><label for="accordion-tabs_2" id="accordion-tabs__2">Гарантия</label></li>
             <li><label for="accordion-tabs_3" id="accordion-tabs__3">Кредит</label></li>
           </ul>
+        </div>
 
           <div class="accordion-tabs_cont">
-            <div id="accordion-tabs__1">
+
+            <div id="services-tab_1">
               <div class="accordion-tabs__delivery">
                 <h3 class="accordion-tabs__title">Доставка</h3>
                 <p class="accordion-tabs__text">
@@ -282,24 +284,24 @@
                   Ваш этаж!
                 </p>
                 <img src="img/services-delivery.png" width="468"
-                height="261" alt="Услуга доставки" class="accordion-tabs__image">
+                height="261" alt="Услуга доставки" class="accordion-tabs__image/">
               </div>
             </div>
 
-            <div id="accordion-tabs__2">
-              <div class="accordion-tabs__guarantee">
-                <h3 class="accordion-tabs__title">Гарантия</h3>
-                <p class="accordion-tabs__text">
-                  Если купленный у нас товар поломается или заискрит, а также
-                  в случае пожара, спровоцированного его возгаранием, Вы всегда
-                  можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-                  товар на новый.<br>
-                  Дом восстановите как-нибудь сами.
-                </p>
-                <img src="img/services-guarantee.png" width="389"
-                height="283" alt="Гарантии" class="accordion-tabs__image">
-              </div>
+          <div id="services-tab_2">
+            <div class="accordion-tabs__guarantee">
+              <h3 class="accordion-tabs__title">Гарантия</h3>
+              <p class="accordion-tabs__text">
+                Если купленный у нас товар поломается или заискрит, а также
+                в случае пожара, спровоцированного его возгаранием, Вы всегда
+                можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+                товар на новый.<br>
+                Дом восстановите как-нибудь сами.
+              </p>
+              <img src="img/services-guarantee.png" width="389"
+              height="283" alt="Гарантии" class="accordion-tabs__image"/>
             </div>
+          </div>
 
             <div id="services-tab_3">
               <div class="accordion-tabs__credit">
@@ -313,12 +315,13 @@
                 height="285" alt="Кредитование" class="accordion-tabs__image">
               </div>
             </div>
-          </div>
+
+            </div>
 
         </section>
 
         <section class="about-company">
-          <h1 class="visually-hidden">Информация о компании</h1>
+          <h2 class="visually-hidden">Информация о компании</h2>
           <section class="our-company">
             <header class="custom-header">
               <h2 class="custom-header__title">Компания "Техномарт"</h2>
