@@ -122,8 +122,12 @@
             </div>
 
             <div class="filter-interval">
-              <input type="text" name="min-price">
-              <input type="text" name="max-price">
+              <label for="min-price">
+                <input type="text" name="min-price" id="min-price">
+              </label>
+              <label for="max-price">
+                <input type="text" name="max-price" id="max-price">
+              </label>
             </div>
 
             </fieldset>
@@ -150,10 +154,10 @@
             <fieldset>
             <legend  class="catalog-feed-title">Питание:</legend>
             <label for="feed-batery" class="filter__label">
-              <input type="checkbox" name="feed" id="feed-batery" value="battery">Аккумуляторные
+              <input type="radio" name="feed" id="feed-batery" value="battery">Аккумуляторные
             </label>
             <label for="feed-net" class="filter__label">
-              <input type="checkbox" name="feed" id="feed-net" value="network">Сетевые
+              <input type="radio" name="feed" id="feed-net" value="network">Сетевые
             </label>
 
             <button>Показать</button>
