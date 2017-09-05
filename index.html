@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
 
-      <div class="container container_breadth container_breadth_full">
+      <div class="container container__header container_breadth container_breadth_full">
         <section class="top-header">
 
           <h2 class="visually-hidden">
@@ -16,10 +17,10 @@
 
           <div class="top-header__logo">Техномарт</div>
           <form class="form-search">
-            <input type="search" placeholder="Поиск" class="form-search__input"/>
-            <button class="form-search__button">
-              <!--<span class="установить класс для иконки лупы"></span>-->
-            </button>
+            <input type="search" placeholder="Поиск" class="form-search__input" id="search-input"/>
+            <label for="search-input">
+
+            </label>
           </form>
           <ul class="price-menu">
             <li class="price-menu__item">
@@ -142,17 +143,17 @@
         <div class="promo-content__column promo-content__column_position promo-content__column_position_right">
 
           <div class="promo-item">
-            <h2 class="promo-item__link">Техника</h2>
+            <h2 class="promo-item__title">Техника</h2>
             <a href="#" class="promo-item__link">для стройки</a>
           </div>
 
           <div class="promo-item">
-            <h2 class="promo-item__link">Скидки 50%</h2>
+            <h2 class="promo-item__title">Скидки 50%</h2>
             <a href="#" class="promo-item__link">На 350 товаров</a>
           </div>
 
           <div class="promo-item new-item">
-            <h2 class="promo-item__link">Доставка</h2>
+            <h2 class="promo-item__title">Доставка</h2>
             <a href="#" class="promo-item__link">Бесплатно</a>
           </div>
         </div>
